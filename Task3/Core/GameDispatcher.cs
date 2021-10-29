@@ -10,6 +10,7 @@ namespace Task3.Core
     {
         #region Properties
         public string[][] CombinationResults { private set; get; }
+
         public HelpTable HelpTable { private set; get; }
         #endregion
 

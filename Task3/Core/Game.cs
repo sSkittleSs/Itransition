@@ -12,7 +12,9 @@ namespace Task3.Core
     {
         #region Fields
         private int computerMove;
+
         private readonly GameDispatcher gameDispatcher;
+
         private readonly GameMenu gameMenu;
         #endregion
 
@@ -53,7 +55,6 @@ namespace Task3.Core
                     Console.WriteLine("Your move: exit\nGood bye!");
                     return;
                 }
-
                 UserMove = gameMenu.ConvertMoveToString(Convert.ToInt32(move - 1));
                 Console.WriteLine("Your move: " + UserMove);
                 Console.WriteLine("Computer move: " + gameMenu.ConvertMoveToString(computerMove));
